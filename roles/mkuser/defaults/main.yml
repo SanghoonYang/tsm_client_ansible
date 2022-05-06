@@ -1,0 +1,11 @@
+group_list:
+  - grp_name: tsm
+    gid: 1003
+
+user_list:
+  - id: tsminst1
+    new_password: tsminst1
+    uid: 1003
+    use_sudo: no
+    groups: tsm
+    commant: create by ansible.

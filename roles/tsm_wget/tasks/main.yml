@@ -1,0 +1,20 @@
+---
+- name: TSM wget file
+  file:
+    path: "{{ istall_dir }}"
+    state: directory
+    mode: '0744'
+
+- name: Download
+  get_url: 
+    url="{{ url }}" 
+    dest="{{ dest_dir }}" 
+    mode='0744' 
+
+- name: TAR XVF
+  unarchive:
+    src: '/opt/tivoli/tsm/tsm_install/TSMinstall_file.tar'
+    dest: '{{ dir }}'
+    remote_src: yes
+    owner: 'root'
+    mode: '0744'

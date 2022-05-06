@@ -1,0 +1,46 @@
+---
+- name: install lsof
+  yum:
+    state: present
+    name:
+      -  lsof
+
+- name: install gskcrypt64 rpm
+  yum:
+    name: /opt/tivoli/tsm/tsm_install/gskcrypt64-8.0.55.9.linux.x86_64.rpm
+    state: present
+
+- name: install gskssl64 rpm
+  yum:
+    name: /opt/tivoli/tsm/tsm_install/gskssl64-8.0.55.9.linux.x86_64.rpm
+    state: present
+
+- name: install TIVsm-API64 rpm
+  yum:
+    name: /opt/tivoli/tsm/tsm_install/TIVsm-API64.x86_64.rpm
+    state: present
+
+- name: install TIVsm-APIcit rpm
+  yum:
+    name: /opt/tivoli/tsm/tsm_install/TIVsm-APIcit.x86_64.rpm
+    state: present
+
+- name: install TIVsm-BA rpm
+  yum:
+    name: /opt/tivoli/tsm/tsm_install/TIVsm-BA.x86_64.rpm
+    state: present
+
+- name: install TIVsm-BAcit rpm
+  yum:
+    name: /opt/tivoli/tsm/tsm_install/TIVsm-BAcit.x86_64.rpm
+    state: present
+
+- name: install TIVsm-BAhdw rpm
+  yum:
+    name: /opt/tivoli/tsm/tsm_install/TIVsm-BAhdw.x86_64.rpm
+    state: present
+
+- name: install TIVsm-WEBGUI rpm
+  yum:
+    name: /opt/tivoli/tsm/tsm_install/TIVsm-WEBGUI.x86_64.rpm
+    state: present

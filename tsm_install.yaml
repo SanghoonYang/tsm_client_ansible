@@ -1,0 +1,8 @@
+---
+- name: TSM client
+  hosts: client3
+  roles:
+  -  role: mkuser
+  -  role: tsm_wget
+  -  role: tsm_install
+  -  role: tsm_conf

@@ -1,0 +1,12 @@
+---
+- name: Copy dsm.sys
+  copy:
+    src: /opt/tivoli/tsm/client/ba/bin/dsm.sys.smp
+    dest: /opt/tivoli/tsm/client/ba/bin/dsm.sys
+    remote_src: yes
+
+- name: Copy dsm.opt
+  copy:
+    src: /opt/tivoli/tsm/client/ba/bin/dsm.opt.smp
+    dest: /opt/tivoli/tsm/client/ba/bin/dsm.opt
+    remote_src: yes

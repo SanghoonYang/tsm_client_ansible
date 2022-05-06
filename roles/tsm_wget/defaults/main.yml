@@ -1,0 +1,5 @@
+---
+url: ftp://ftp.software.ibm.com/storage/tivoli-storage-management/maintenance/client/v8r1/Linux/LinuxX86/BA/v819/8.1.9.0-TIV-TSMBAC-LinuxX86.tar
+istall_dir: /opt/tivoli/tsm/tsm_install/
+dest_dir: /opt/tivoli/tsm/tsm_install/TSMinstall_file.tar
+dir: /opt/tivoli/tsm/tsm_install

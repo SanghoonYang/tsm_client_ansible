@@ -1,0 +1,16 @@
+- name: create tsminst1 group
+  group:
+    name: "{{ item.grp_name }}"
+    gid: "{{ item.gid }}"
+    state: present
+  with_items: "{{ group_list }}"
+
+- name: mkuser tsminst1
+  user:
+    name: "{{ item.id }}"
+    update_password: always
+    uid: "{{ item.uid }}"
+    groups: "{{ item.groups }}"
+#    comment: "{{ item.comment }}"
+    password: "{{ item.new_password | password_hash('sha512') }}"
+  with_items: "{{ user_list }}"
